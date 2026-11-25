@@ -1,0 +1,220 @@
+{
+  "dataset": "final_dataset_v4_candidate.csv",
+  "seed": 42,
+  "strategy": "Group-preserving, primary-source-and-label stratified assignment; exactly 100 banter messages reserved in test using complete groups; remaining banter groups assigned to train/validation only.",
+  "total_rows": 225653,
+  "total_groups": 218524,
+  "split_stats": {
+    "train": {
+      "rows": 180368,
+      "groups": 174740,
+      "label_0": 129710,
+      "label_1": 50658,
+      "label_0_pct": 71.914,
+      "label_1_pct": 28.086
+    },
+    "validation": {
+      "rows": 22671,
+      "groups": 21887,
+      "label_0": 16338,
+      "label_1": 6333,
+      "label_0_pct": 72.066,
+      "label_1_pct": 27.934
+    },
+    "test": {
+      "rows": 22614,
+      "groups": 21897,
+      "label_0": 16274,
+      "label_1": 6340,
+      "label_0_pct": 71.964,
+      "label_1_pct": 28.036
+    }
+  },
+  "category_stats_nonexclusive_source_provenance": {
+    "hinglish": {
+      "train": {
+        "rows": 15748,
+        "groups": 15680,
+        "label_0": 8268,
+        "label_1": 7480,
+        "label_0_pct": 52.502,
+        "label_1_pct": 47.498
+      },
+      "validation": {
+        "rows": 1971,
+        "groups": 1961,
+        "label_0": 1035,
+        "label_1": 936,
+        "label_0_pct": 52.511,
+        "label_1_pct": 47.489
+      },
+      "test": {
+        "rows": 1970,
+        "groups": 1961,
+        "label_0": 1033,
+        "label_1": 937,
+        "label_0_pct": 52.437,
+        "label_1_pct": 47.563
+      }
+    },
+    "kannada_english": {
+      "train": {
+        "rows": 3558,
+        "groups": 3544,
+        "label_0": 2648,
+        "label_1": 910,
+        "label_0_pct": 74.424,
+        "label_1_pct": 25.576
+      },
+      "validation": {
+        "rows": 444,
+        "groups": 444,
+        "label_0": 330,
+        "label_1": 114,
+        "label_0_pct": 74.324,
+        "label_1_pct": 25.676
+      },
+      "test": {
+        "rows": 453,
+        "groups": 444,
+        "label_0": 339,
+        "label_1": 114,
+        "label_0_pct": 74.834,
+        "label_1_pct": 25.166
+      }
+    },
+    "banter": {
+      "train": {
+        "rows": 349,
+        "groups": 332,
+        "label_0": 349,
+        "label_1": 0,
+        "label_0_pct": 100.0,
+        "label_1_pct": 0.0
+      },
+      "validation": {
+        "rows": 92,
+        "groups": 83,
+        "label_0": 92,
+        "label_1": 0,
+        "label_0_pct": 100.0,
+        "label_1_pct": 0.0
+      },
+      "test": {
+        "rows": 100,
+        "groups": 91,
+        "label_0": 100,
+        "label_1": 0,
+        "label_0_pct": 100.0,
+        "label_1_pct": 0.0
+      }
+    },
+    "english_general": {
+      "train": {
+        "rows": 142115,
+        "groups": 138105,
+        "label_0": 113252,
+        "label_1": 28863,
+        "label_0_pct": 79.69,
+        "label_1_pct": 20.31
+      },
+      "validation": {
+        "rows": 17845,
+        "groups": 17261,
+        "label_0": 14235,
+        "label_1": 3610,
+        "label_0_pct": 79.77,
+        "label_1_pct": 20.23
+      },
+      "test": {
+        "rows": 17759,
+        "groups": 17266,
+        "label_0": 14153,
+        "label_1": 3606,
+        "label_0_pct": 79.695,
+        "label_1_pct": 20.305
+      }
+    },
+    "trac": {
+      "train": {
+        "rows": 18478,
+        "groups": 18419,
+        "label_0": 5527,
+        "label_1": 12951,
+        "label_0_pct": 29.911,
+        "label_1_pct": 70.089
+      },
+      "validation": {
+        "rows": 2304,
+        "groups": 2303,
+        "label_0": 687,
+        "label_1": 1617,
+        "label_0_pct": 29.818,
+        "label_1_pct": 70.182
+      },
+      "test": {
+        "rows": 2314,
+        "groups": 2305,
+        "label_0": 689,
+        "label_1": 1625,
+        "label_0_pct": 29.775,
+        "label_1_pct": 70.225
+      }
+    },
+    "synthetic_harmful": {
+      "train": {
+        "rows": 491,
+        "groups": 490,
+        "label_0": 0,
+        "label_1": 491,
+        "label_0_pct": 0.0,
+        "label_1_pct": 100.0
+      },
+      "validation": {
+        "rows": 62,
+        "groups": 62,
+        "label_0": 0,
+        "label_1": 62,
+        "label_0_pct": 0.0,
+        "label_1_pct": 100.0
+      },
+      "test": {
+        "rows": 62,
+        "groups": 62,
+        "label_0": 0,
+        "label_1": 62,
+        "label_0_pct": 0.0,
+        "label_1_pct": 100.0
+      }
+    }
+  },
+  "banter_test_target": 100,
+  "banter_test_actual": 100,
+  "selected_banter_groups_for_test": 91,
+  "group_overlap_counts": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "exact_normalized_text_overlap_counts": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "mixed_label_groups": 0,
+  "checks": {
+    "all_rows_assigned_once": true,
+    "no_group_overlap_between_splits": true,
+    "no_exact_normalized_text_overlap_between_splits": true,
+    "banter_test_exactly_100": true,
+    "no_mixed_label_groups": true,
+    "same_source_dataset_for_all_splits": true
+  },
+  "limitations": [
+    "Group integrity is guaranteed for near_duplicate_group_id groups detected by the preceding MinHash audit.",
+    "This does not prove all semantic paraphrases or near-duplicates have been detected.",
+    "Banter examples are source-defined synthetic_banter_boost messages; this is not a comprehensive naturally occurring banter benchmark.",
+    "Source categories overlap because deduplicated rows preserve multiple source names; subgroup counts are non-exclusive.",
+    "Banter test target is exactly 100 messages because complete groups summing to 100 were found. Overall split proportions are approximate due to group constraints and reserved banter groups."
+  ]
+}

@@ -1,0 +1,40 @@
+FINAL DATASET V3 — RECONSTRUCTION AND CLEANUP REPORT
+=====================================================
+
+Policy applied:
+1. Rebuilt from all 10 supplied source CSVs using the source combination and
+   basic row filtering already reproduced in final_dataset_v2_candidate.csv.
+2. Did NOT apply the global slang expansion.
+3. Normalized text for exact duplicate/conflict detection using lowercase,
+   leading/trailing trim, and collapsing repeated whitespace. Original
+   clean_text spelling/casing is retained in the output.
+4. Conflicting-label text groups were excluded from the training candidate
+   and all original rows for those groups were saved to a separate quarantine.
+5. Same-text, same-label duplicates were collapsed to one record globally.
+   The source column preserves all contributing source names, separated by ';'.
+6. Hinglish2's 25,000 repeated rows therefore contribute only unique messages
+   (its 40 unique messages are retained unless a message is quarantined for
+   conflicting labels).
+7. Sample weights were recomputed after deduplication and conflict exclusion:
+   inverse-frequency class base weight multiplied by the maximum original
+   source multiplier among the contributing sources. The individual source
+   multipliers are retained in source_multipliers.
+
+Original candidate rows: 254,303
+Rows in conflicting-label groups quarantined: 409
+Rows remaining before deduplication: 253,894
+Unique final records after deduplication: 226,853
+Same-label duplicate rows collapsed: 27,041
+Conflicting text groups: 106
+Final label distribution: {0: 163355, 1: 63498}
+Class base weights: {0: 0.6943558507544918, 1: 1.7863003559167219}
+
+Important limitations:
+- This file is a cleaned dataset candidate, not yet a train/validation/test split.
+- Near-duplicates and paraphrases have not been detected.
+- Exact duplicate removal does not guarantee absence of semantic leakage.
+- Conflicting-label groups were excluded rather than manually relabelled.
+- Source-level class balance and synthetic-data influence must be reviewed.
+- The max-source-multiplier rule is explicit and conservative in record count,
+  but should be approved before training; it preserves the strongest existing
+  source emphasis for merged records.

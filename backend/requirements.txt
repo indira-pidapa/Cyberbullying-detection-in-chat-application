@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+chromadb
+transformers
+torch
+vaderSentiment
+scipy
+python-multipart
+PyJWT
+pandas
+scikit-learn
+pytest
+

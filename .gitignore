@@ -1,0 +1,85 @@
+
+# =========================
+# Python cache files
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Virtual environments
+# =========================
+venv/
+.venv/
+env/
+
+# =========================
+# Datasets
+# =========================
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.jsonl
+*.tsv
+
+# =========================
+# Trained models and weights
+# =========================
+model/
+models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.h5
+*.keras
+*.onnx
+*.pkl
+*.joblib
+
+# =========================
+# Vector database / cache
+# =========================
+chroma_db/
+.cache/
+cache/
+huggingface_cache/
+transformers_cache/
+*.sqlite3
+*.db
+
+# =========================
+# Environment variables / secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Logs and temporary files
+# =========================
+*.log
+logs/
+temp/
+tmp/
+*.tmp
+
+# =========================
+# Frontend dependencies
+# =========================
+node_modules/
+dist/
+build/
+
+# =========================
+# IDE and OS files
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
